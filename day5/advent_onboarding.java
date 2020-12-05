@@ -25,14 +25,16 @@ public class advent_onboarding{
 		}
 		
 	    }
-	    Collections.sort(ids); 
+	    Collections.sort(ids);
+	    
 	    for(int i = 0; i < ids.size() - 1; i++){
+
 		int tmp = ids.get(i);
 		int next = ids.get(i+1);
 		if(next - tmp > 1){
 		    System.out.println(tmp + 1);
-		}
-		
+		    return;
+		}	      
 	    }
 	    
 	    my_reader.close();

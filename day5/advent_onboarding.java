@@ -13,10 +13,10 @@ public class advent_onboarding{
 	int max = 0;
 	List<Integer> ids = new ArrayList<Integer>();
 	try {
-	    File myObj = new File("input.txt");
-	    Scanner myReader = new Scanner(myObj);
-	    while (myReader.hasNextLine()) {
-		String boarding_pass = myReader.nextLine();
+	    File my_obj = new File("input.txt");
+	    Scanner my_reader = new Scanner(my_obj);
+	    while (my_reader.hasNextLine()) {
+		String boarding_pass = my_reader.nextLine();
 	       
 		int id = find_id(boarding_pass);
 		ids.add(id);
@@ -35,7 +35,7 @@ public class advent_onboarding{
 		
 	    }
 	    
-	    myReader.close();
+	    my_reader.close();
 	} catch (FileNotFoundException e) {
 	    System.out.println("An error occurred.");
 	    e.printStackTrace();

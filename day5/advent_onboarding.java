@@ -1,10 +1,8 @@
-import java.io.File;  // Import the File class
-import java.io.FileNotFoundException;  // Import this class to handle errors
-import java.util.Scanner; // Import the Scanner class to read text files
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
 import java.util.*;
-//binary space partitioning
-//FBFBBFFRLR, where F means "front"-0-67, B means "back"-68-127, L means "left", and R means "right".
-//44 * 8 + 5 = 357.
+
 
 public class advent_onboarding{
     

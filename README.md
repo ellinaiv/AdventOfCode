@@ -3,4 +3,4 @@ You can find all the tasks here
 ```
 https://adventofcode.com/
 ```
-Language used in the solution is Java.
+Programming language used in the solution is Java.

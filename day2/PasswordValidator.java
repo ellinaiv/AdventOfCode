@@ -36,19 +36,17 @@ public class PasswordValidator {
         }
         return num;
     }
-    public static boolean validate(String[] l, String[] letter, String[] password){
-        int numDetected = 0;
-        for(int i = 0; i < password.length; i++){
-            if(password[].equals(letter[0])){
-                numDetected++;
-                if(numDetected > Integer.parseInt(limits[1])){
-                    return false;
-                }
-            }
+    public static boolean validate(String[] limits, String[] letter, String[] password){
+
+        int positionFirst = Integer.parseInt(limits[0]);
+        int positionSecond = Integer.parseInt(limits[1]);
+
+
+
+        if((password[positionFirst].equals(letter[0]) || password[positionSecond].equals(letter[0])) && !password[positionFirst].equals(password[positionSecond])){
+            return true;
         }
-        if(numDetected < Integer.parseInt(limits[0])){
-            return false;
-        }
-        return true;
+
+        return false;
     }
 }

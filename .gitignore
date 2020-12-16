@@ -1,0 +1,6 @@
+*#
+*.Class
+*.txt
+*.idea
+*.iml
+*.~
